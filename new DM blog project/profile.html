@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard - DM Blog</title>
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="header">
+        <nav>
+            <a href="index.html" class="nav__logo">DM BLOG</a>
+            <ul class="nav__items">
+                <li><a href="#">Profile</a></li>
+                <li><a href="write-blog.html">Write Blog</a></li>
+                <li><a href="signin.html">Log Out</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section class="dashboard">
+        <h1>Welcome, [User's Name]</h1>
+        <div class="dashboard-content">
+            <div class="user-info">
+                <h2>Your Profile</h2>
+                <p><strong>Email:</strong> user@example.com</p>
+                <p><strong>Joined:</strong> January 1, 2024</p>
+                <a href="edit-profile.html" class="btn">Edit Profile</a>
+            </div>
+
+            <div class="user-blogs">
+                <h2>Your Blogs</h2>
+                <ul>
+                    <li>
+                        <a href="#">Blog Title 1</a> 
+                        <a href="#" class="btn">Edit</a>
+                        <a href="delete-blog1.html" class="btn delete">Delete</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog Title 2</a> 
+                        <a href="#" class="btn">Edit</a>
+                        <a href="delete-blog2.html" class="btn delete">Delete</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog Title 3</a> 
+                        <a href="#" class="btn">Edit</a>
+                        <a href="delete-blog3.html" class="btn delete">Delete</a>
+                    </li>
+                </ul>
+                <a href="writeblog.html" class="btn">Write New Blog</a>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 DM Blog. All rights reserved.</p>
+    </footer>
+</body>
+</html>

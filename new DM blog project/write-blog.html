@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write Blog - DM Blog</title>
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <a href="index.html" class="nav__logo">DM BLOG</a>
+            <ul class="nav__items">
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="signin.html">Log Out</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section class="write-blog">
+        <h1>Write Your Blog</h1>
+        <form action="submit_blog.php" method="POST" enctype="multipart/form-data">
+            <div class="form__control">
+                <label for="title">Blog Title</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+            <div class="form__control">
+                <label for="content">Content</label>
+                <textarea id="content" name="content" rows="10" required></textarea>
+            </div>
+            <div class="form__control">
+                <label for="tags">Tags (comma-separated)</label>
+                <input type="text" id="tags" name="tags">
+            </div>
+            <div class="form__control">
+                <label for="image">Upload Image</label>
+                <input type="file" id="image" name="image" accept="image/*">
+            </div>
+            <button type="submit" class="btn">Submit Blog</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 DM Blog. All rights reserved.</p>
+    </footer>
+</body>
+</html>
